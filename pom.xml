@@ -28,29 +28,29 @@
 			<artifactId>spring-cloud-function-web</artifactId>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.github.danielwegener/logback-kafka-appender -->
-		<dependency>
-			<groupId>com.github.danielwegener</groupId>
-			<artifactId>logback-kafka-appender</artifactId>
-			<version>0.2.0-RC2</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.kafka</groupId>
-					<artifactId>kafka-clients</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.github.danielwegener</groupId> -->
+<!-- 			<artifactId>logback-kafka-appender</artifactId> -->
+<!-- 			<version>0.2.0-RC2</version> -->
+<!-- 			<exclusions> -->
+<!-- 				<exclusion> -->
+<!-- 					<groupId>org.apache.kafka</groupId> -->
+<!-- 					<artifactId>kafka-clients</artifactId> -->
+<!-- 				</exclusion> -->
+<!-- 			</exclusions> -->
+<!-- 		</dependency> -->
 		<!-- https://mvnrepository.com/artifact/io.micronaut.configuration/micronaut-kafka -->
-		<dependency>
-			<groupId>io.micronaut.configuration</groupId>
-			<artifactId>micronaut-kafka</artifactId>
-			<version>1.4.0</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.kafka</groupId>
-					<artifactId>kafka-clients</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
+<!-- 		<DEPENDENCY> -->
+<!-- 			<GROUPID>IO.MICRONAUT.CONFIGURATION</GROUPID> -->
+<!-- 			<ARTIFACTID>MICRONAUT-KAFKA</ARTIFACTID> -->
+<!-- 			<VERSION>1.4.0</VERSION> -->
+<!-- 			<EXCLUSIONS> -->
+<!-- 				<EXCLUSION> -->
+<!-- 					<GROUPID>ORG.APACHE.KAFKA</GROUPID> -->
+<!-- 					<ARTIFACTID>KAFKA-CLIENTS</ARTIFACTID> -->
+<!-- 				</EXCLUSION> -->
+<!-- 			</EXCLUSIONS> -->
+<!-- 		</DEPENDENCY> -->
 		<dependency>
 			<groupId>org.springframework.experimental</groupId>
 			<artifactId>spring-graalvm-native</artifactId>

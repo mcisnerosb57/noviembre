@@ -34,7 +34,7 @@
   "methods":[{"name":"initialize","parameterTypes":["org.springframework.context.ConfigurableApplicationContext"] }]
 },
 {
-  "name":"com.example.demo.DemoApplication$$Lambda$440/1438098656",
+  "name":"com.example.demo.DemoApplication$$Lambda$426/745962066",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"apply","parameterTypes":["java.lang.Object"] }]
@@ -349,9 +349,6 @@
   "fields":[{"name":"producerLimit", "allowUnsafeAccess":true}]
 },
 {
-  "name":"io.reactivex.Flowable"
-},
-{
   "name":"java.io.Serializable",
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -476,19 +473,6 @@
 },
 {
   "name":"javax.annotation.Resource"
-},
-{
-  "name":"javax.inject.Inject"
-},
-{
-  "name":"javax.inject.Named"
-},
-{
-  "name":"javax.inject.Provider"
-},
-{
-  "name":"javax.inject.Qualifier",
-  "allDeclaredMethods":true
 },
 {
   "name":"javax.naming.ldap.LdapContext"
@@ -923,7 +907,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$DefaultCodecsConfiguration$$Lambda$385/536765369",
+  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$DefaultCodecsConfiguration$$Lambda$371/1307904972",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },
@@ -934,7 +918,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration$$Lambda$390/1007880005",
+  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration$$Lambda$376/1378084334",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },
@@ -2413,7 +2397,7 @@
   "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder"
 },
 {
-  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$458/1661123505",
+  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$444/1118078504",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },

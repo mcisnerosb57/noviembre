@@ -13,9 +13,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.support.GenericApplicationContext;
 
-import com.github.danielwegener.logback.kafka.KafkaAppender;
-import com.github.danielwegener.logback.kafka.delivery.AsynchronousDeliveryStrategy;
-import com.github.danielwegener.logback.kafka.keying.NoKeyKeyingStrategy;
+//import com.github.danielwegener.logback.kafka.KafkaAppender;
+//import com.github.danielwegener.logback.kafka.delivery.AsynchronousDeliveryStrategy;
+//import com.github.danielwegener.logback.kafka.keying.NoKeyKeyingStrategy;
 
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.LoggerContext;
