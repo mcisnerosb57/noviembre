@@ -70,12 +70,12 @@
 			<artifactId>spring-boot-starter-security</artifactId>
 			<version>2.3.3.RELEASE</version>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.kafka</groupId>
-			<artifactId>kafka-clients</artifactId>
-			<version>2.4.2-CUSTOM</version>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.kafka</groupId> -->
+<!-- 			<artifactId>kafka-clients</artifactId> -->
+<!-- 			<version>2.4.2-CUSTOM</version> -->
 <!-- 			<scope>compile</scope> -->
-		</dependency>
+<!-- 		</dependency> -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
