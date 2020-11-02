@@ -18,7 +18,7 @@ jobs:
               uses: Azure/functions-action@v1.1.5
               with:
                 app-name: ${{ secrets.AZ_FUNCTION_NAME_APP }}
-                package: ./
+                package: target/function
 
 
 
