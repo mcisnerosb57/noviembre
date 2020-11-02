@@ -1,0 +1,44 @@
+name: Build and deploy native image
+on: [push, pull_request]
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+            - name: Install GraalVM
+              uses: DeLaGuardo/setup-graalvm@3
+              with:
+                graalvm-version: '20.2.0.java11'
+            - name: Test GraalVM installation
+              run: java -version
+            - name: Install native-image
+              run: |
+                echo 
+                gu install native-image
+            - name: Permisos
+              run: chmod 777 *.*
+            - name: Login to Azure
+              uses: azure/login@v1.1
+              with:
+                creds: ${{ secrets.AZURE_CREDENTIALS }}
+            - name: 'Deploy to Azure Function'
+              uses: Azure/functions-action@v1.1.5
+              with:
+                app-name: ${{ secrets.AZ_FUNCTION_NAME_APP }}
+                package: target/function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
