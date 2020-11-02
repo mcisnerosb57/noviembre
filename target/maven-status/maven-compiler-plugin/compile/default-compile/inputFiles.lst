@@ -1,0 +1,8 @@
+/home/moises/additional/noviembre/noviembre/src/main/java/com/example/demo/DemoApplication.java
+/home/moises/additional/noviembre/noviembre/src/main/java/com/example/demo/config/error/GlobalErrorWebExceptionHandler.java
+/home/moises/additional/noviembre/noviembre/src/main/java/com/example/demo/model/dto/GenerarPrecioIvaIn.java
+/home/moises/additional/noviembre/noviembre/src/main/java/com/example/demo/model/func/AplicarIva.java
+/home/moises/additional/noviembre/noviembre/src/main/java/com/example/demo/config/security/WebSecurityConfig.java
+/home/moises/additional/noviembre/noviembre/src/main/java/com/example/demo/config/error/ConfiguracionAdvices.java
+/home/moises/additional/noviembre/noviembre/src/main/java/com/example/demo/config/security/JwtWebFilter.java
+/home/moises/additional/noviembre/noviembre/src/main/java/com/example/demo/config/log/LoggerConfig.java
