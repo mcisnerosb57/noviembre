@@ -34,7 +34,7 @@
   "methods":[{"name":"initialize","parameterTypes":["org.springframework.context.ConfigurableApplicationContext"] }]
 },
 {
-  "name":"com.example.demo.DemoApplication$$Lambda$440/1594199808",
+  "name":"com.example.demo.DemoApplication$$Lambda$440/1438098656",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"apply","parameterTypes":["java.lang.Object"] }]
@@ -923,7 +923,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$DefaultCodecsConfiguration$$Lambda$385/1374026904",
+  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$DefaultCodecsConfiguration$$Lambda$385/536765369",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },
@@ -934,7 +934,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration$$Lambda$390/215219944",
+  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration$$Lambda$390/1007880005",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },
@@ -2413,7 +2413,7 @@
   "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder"
 },
 {
-  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$458/825249556",
+  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$458/1661123505",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },
