@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.0-M3</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>demo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>demo</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>1.8</java.version>
+		<spring-cloud-function.version>3.1.0-SNAPSHOT</spring-cloud-function.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-function-web</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.danielwegener/logback-kafka-appender -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.github.danielwegener</groupId> -->
+<!-- 			<artifactId>logback-kafka-appender</artifactId> -->
+<!-- 			<version>0.2.0-RC2</version> -->
+<!-- 			<exclusions> -->
+<!-- 				<exclusion> -->
+<!-- 					<groupId>org.apache.kafka</groupId> -->
+<!-- 					<artifactId>kafka-clients</artifactId> -->
+<!-- 				</exclusion> -->
+<!-- 			</exclusions> -->
+<!-- 		</dependency> -->
+		<!-- https://mvnrepository.com/artifact/io.micronaut.configuration/micronaut-kafka -->
+<!-- 		<DEPENDENCY> -->
+<!-- 			<GROUPID>IO.MICRONAUT.CONFIGURATION</GROUPID> -->
+<!-- 			<ARTIFACTID>MICRONAUT-KAFKA</ARTIFACTID> -->
+<!-- 			<VERSION>1.4.0</VERSION> -->
+<!-- 			<EXCLUSIONS> -->
+<!-- 				<EXCLUSION> -->
+<!-- 					<GROUPID>ORG.APACHE.KAFKA</GROUPID> -->
+<!-- 					<ARTIFACTID>KAFKA-CLIENTS</ARTIFACTID> -->
+<!-- 				</EXCLUSION> -->
+<!-- 			</EXCLUSIONS> -->
+<!-- 		</DEPENDENCY> -->
+		<dependency>
+			<groupId>org.springframework.experimental</groupId>
+			<artifactId>spring-graalvm-native</artifactId>
+			<version>0.8.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-indexer</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+			<version>2.3.3.RELEASE</version>
+		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.kafka</groupId> -->
+<!-- 			<artifactId>kafka-clients</artifactId> -->
+<!-- 			<version>2.4.2-CUSTOM</version> -->
+<!-- 			<scope>compile</scope> -->
+<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>6.0.5.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>3.10.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-function-dependencies</artifactId>
+				<version>${spring-cloud-function.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+		</repository>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+</project>
