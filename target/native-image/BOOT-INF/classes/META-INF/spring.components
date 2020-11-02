@@ -1,5 +1,0 @@
-com.example.demo.DemoApplication=org.springframework.stereotype.Component
-com.example.demo.config.error.ConfiguracionAdvices=org.springframework.stereotype.Component
-com.example.demo.config.error.GlobalErrorWebExceptionHandler=org.springframework.stereotype.Component
-com.example.demo.config.security.JwtWebFilter=org.springframework.stereotype.Component
-com.example.demo.config.security.WebSecurityConfig=org.springframework.stereotype.Component
