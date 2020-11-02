@@ -24,11 +24,6 @@ CP=BOOT-INF/classes:$LIBPATH
 echo "Generating reflection files for $ARTIFACT"
 rm -rf graal/META-INF 2>/dev/null
 mkdir -p graal/META-INF/native-image
-java -agentlib:native-image-agent=config-output-dir=graal/META-INF/native-image -cp $CP $MAINCLASS >> output.txt 2>&1 &
-PID=$!
-sleep 3
-curl -m 1 http://localhost:8080 > /dev/null 2>&1
-sleep 1 && kill $PID || kill -9 $PID
 
 GRAALVM_VERSION=`native-image --version`
 
@@ -39,11 +34,11 @@ time native-image \
   --allow-incomplete-classpath \
   --enable-all-security-services \
   -H:EnableURLProtocols=http,jar \
-  -H:ConfigurationFileDirectories=../target/\
-  -H:ResourceConfigurationFiles=../resource-config.json \
-  -H:ReflectionConfigurationFiles=../reflect-config.json \
-  -H:JNIConfigurationFiles=../jni-config.json \
-  -H:DynamicProxyConfigurationFiles=../proxy-config.json \
+  -H:ConfigurationFileDirectories=../\
+  -H:ResourceConfigurationFiles=../../resource-config.json \
+  -H:ReflectionConfigurationFiles=../../reflect-config.json \
+  -H:JNIConfigurationFiles=../../jni-config.json \
+  -H:DynamicProxyConfigurationFiles=../../proxy-config.json \
   -H:Name=$ARTIFACT \
   -H:+ReportExceptionStackTraces \
   --no-fallback \
